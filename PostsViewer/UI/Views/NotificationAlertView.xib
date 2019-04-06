@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eOB-bs-6Yw" customClass="NotificationAlertView" customModule="Babylon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="NDW-Uf-Z5x" userLabel="Banner View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Lqd-cN-X3m" userLabel="Main Vertical Container">
+                            <rect key="frame" x="15" y="0.0" width="345" height="64"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Er8-nZ-qHv" userLabel="Header Stack View">
+                                    <rect key="frame" x="0.0" y="0.0" width="345" height="64"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JC2-nn-qdX" userLabel="Image View Container">
+                                            <rect key="frame" x="0.0" y="0.0" width="45" height="64"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LZq-bG-MOg" userLabel="Avatar View">
+                                                    <rect key="frame" x="10" y="19.5" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="dWs-ON-30g"/>
+                                                        <constraint firstAttribute="width" constant="25" id="uAD-rA-goN"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="LZq-bG-MOg" secondAttribute="trailing" constant="10" id="9nF-rH-7pU"/>
+                                                <constraint firstItem="LZq-bG-MOg" firstAttribute="centerY" secondItem="JC2-nn-qdX" secondAttribute="centerY" id="BvR-x6-qVc"/>
+                                                <constraint firstItem="LZq-bG-MOg" firstAttribute="leading" secondItem="JC2-nn-qdX" secondAttribute="leading" constant="10" id="lvq-1t-f1N"/>
+                                                <constraint firstAttribute="width" constant="45" id="rld-bk-tB2"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[title]" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGV-cE-AtN" userLabel="Header Label">
+                                            <rect key="frame" x="45" y="0.0" width="300" height="64"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Lqd-cN-X3m" firstAttribute="top" secondItem="NDW-Uf-Z5x" secondAttribute="top" id="0Je-S6-7bB"/>
+                        <constraint firstAttribute="height" constant="64" id="FpZ-mD-PfV"/>
+                        <constraint firstItem="q8b-a8-i1g" firstAttribute="trailing" secondItem="Lqd-cN-X3m" secondAttribute="trailing" constant="15" id="ZUm-HY-6Vf"/>
+                        <constraint firstItem="Lqd-cN-X3m" firstAttribute="leading" secondItem="q8b-a8-i1g" secondAttribute="leading" constant="15" id="fhQ-Kd-NOE"/>
+                        <constraint firstItem="Lqd-cN-X3m" firstAttribute="bottom" secondItem="NDW-Uf-Z5x" secondAttribute="bottom" id="iKo-MX-lhY"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="q8b-a8-i1g"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.15927333047945205" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="NDW-Uf-Z5x" firstAttribute="bottom" secondItem="tBj-eB-Owi" secondAttribute="bottom" id="Hhe-Dx-L0r"/>
+                <constraint firstItem="NDW-Uf-Z5x" firstAttribute="trailing" secondItem="tBj-eB-Owi" secondAttribute="trailing" id="LaU-zo-wsL"/>
+                <constraint firstItem="NDW-Uf-Z5x" firstAttribute="leading" secondItem="tBj-eB-Owi" secondAttribute="leading" id="lK9-j4-6dg"/>
+                <constraint firstItem="NDW-Uf-Z5x" firstAttribute="top" secondItem="tBj-eB-Owi" secondAttribute="top" id="tFr-QZ-j2P"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="tBj-eB-Owi"/>
+            <connections>
+                <outlet property="bannerView" destination="NDW-Uf-Z5x" id="PQE-16-2U8"/>
+                <outlet property="iconImageView" destination="LZq-bG-MOg" id="6So-R7-32t"/>
+                <outlet property="titleLabel" destination="vGV-cE-AtN" id="Nye-Bh-Do7"/>
+                <outlet property="topBannerConstraint" destination="tFr-QZ-j2P" id="gRj-CQ-9bt"/>
+            </connections>
+            <point key="canvasLocation" x="149.59999999999999" y="-104.34782608695653"/>
+        </view>
+    </objects>
+</document>
