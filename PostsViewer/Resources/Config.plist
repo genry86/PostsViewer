@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DISMISS_ALERT_TIMEOUT</key>
+	<string>4</string>
+	<key>DATABASE_SCHEMA</key>
+	<string>1</string>
+	<key>DATABASE_NAME</key>
+	<string>Demo</string>
+	<key>API_URL</key>
+	<string>http://jsonplaceholder.typicode.com</string>
+</dict>
+</plist>

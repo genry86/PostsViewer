@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  PostsViewer
+
+  Created by Genry on 3/27/19.
+  Copyright © 2019 Genry. All rights reserved.
+*/
+
+"splash-screen.title" = "Demo";
+"posts-list.top-bar.title" = "Posts";
+"posts-list.status-message.no-data" = "No Posts available!";
+"posts-detail.top-bar.title" = "Post";
+"post-detail.user-area.name-label" = "Name:";
+"post-detail.user-area.email-label" = "Email:";
+"post-detail.user-area.company-label" = "Company:";
+"post-detail.user-area.website-label" = "Website:";
+"alert-view.online.title" = "online";
+"alert-view.offline.title" = "offline";
