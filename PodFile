@@ -1,0 +1,23 @@
+platform :ios, '10.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'PostsViewer' do
+    pod 'SwiftLint', '0.29.3'
+    pod 'Swinject', '2.5.0'
+    pod 'SwinjectAutoregistration', '2.5.1'
+    pod 'ReactiveCocoa', '8.0.2'
+    pod 'RealmSwift', '3.13.1'
+    pod 'AlamofireObjectMapper', '5.2.0'
+    pod 'Alamofire-SwiftyJSON', '3.0.0'
+    pod 'ReachabilitySwift', '4.3.0'
+    pod 'JLRoutes', '2.1'
+    pod 'SwiftyBeaver', '1.6.1'
+
+    target "PostsViewerTests" do
+      inherit! :complete
+
+      pod 'OHHTTPStubs/Swift', '6.1.0'
+      pod 'Nimble', '8.0.1'
+    end
+end
